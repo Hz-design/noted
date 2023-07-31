@@ -1,0 +1,222 @@
+/* importeer het Colendra font uit onze eigen map */
+@font-face {
+  font-family: 'Colendra';
+  src: url('../assets/ColendraRegular.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* importeer ook de bold gedrukte versie van het Colendra font
+   uit onze eigen map */
+@font-face {
+  font-family: 'Colendra';
+  src: url('../assets/ColendraBold.otf');
+  font-style: normal;
+  font-weight: 700; /* bold */
+}
+
+/* CSS reset */
+*, html {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	color: black;
+	font-family: colendra;
+	font-size: 18pt;
+}
+
+/* Stel een plaatje van de stippen uit de ISGA guide in als achtergrond
+   en herhaal dit patroon */
+body {
+	background-image: url('../images/dot_background.png');
+	background-repeat: repeat;
+}
+
+/* onderstaande styles voor de <h1>, <h2> en <p> tags geven een voorbeeld
+   hoe je de geimporteerde fonts kunt gebruiken.
+   Op je eigen website mag je natuurlijk andere lettertypes, groottes, en
+   kleuren, etc. voor deze tags gebruiken. */
+   
+h1 {
+	font-family: 'Josefin Sans', sans-serif;   
+	font-size: 20pt;
+	line-height: 1.8em;
+	color: #1D1D1B;
+	font-weight: 300; /* bold */
+	text-align: center;
+}
+h2 {
+	font-family: 'Josefin Sans', sans-serif;   
+	font-size: 18pt;
+	line-height: 1.8em;
+	color: #1D1D1B;
+	font-weight: 300;
+	text-align: center;
+}
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14pt;
+	margin:0;
+	padding: 3px;
+}
+header{
+	background-color: #db5342;
+	text-align: center;
+}
+header figure {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+header h1, header p{
+	color: white;
+	text-align: center;
+}
+header p{
+	padding-bottom: 9px;
+	font-size: 16px;
+}
+nav{
+	overflow: hidden;
+	background-color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+nav ul li{
+	color: #db5342;
+	list-style-type: none;
+	margin: auto;
+}
+nav ul li a{
+	color: black;
+	margin: auto;
+	text-decoration:none;
+}
+main{
+	padding: 2% 25px 2% 25px;
+	justify-content: center;
+}
+section{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: center;
+	width: 100%;
+}
+section figure{
+	width: 95px;
+	height: 101px;
+	background-color: #5eb1ab;
+	margin: 1px;
+	border: 1px solid black;
+}
+section figure img{
+	width: 93px;
+	height: 75px;
+}
+section h2{
+	font-size: 15pt;
+	width: 325px;
+}
+.slider{
+	width: 15px;
+	height: 101px;
+	background-color: white;
+}
+img{
+	object-fit: cover;
+}
+.slider img{
+	padding-top: 20px;
+	border: 0px;
+	width: auto;
+	object-fit: fill;
+}
+article{
+	text-align: center;
+}
+article figure{
+	display: block;
+	width: 100%;
+	height: 180px;
+	background-color: white;
+	margin: 3px;
+	border: 1px solid black;
+}
+article figure img{
+	width: 100%;
+	height: 150px;
+	border: 6px solid white;
+}
+.knop{
+	background-color: #5eb1ab;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 5px;
+}
+figcaption {
+	text-align: center;
+}
+article{
+	display: flex;
+	flex-flow: column wrap;
+	margin: 5px;
+	color: white;
+}
+.welkom{
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 350px;
+	font-size: 20pt;
+}
+.knopslides{
+	background-color: #5eb1ab;
+	border: none;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 80px;
+}
+.book{
+	flex-wrap: wrap;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	justify-content: center;
+}
+.book h1{
+	width: 340px;
+}
+footer{
+	margin-bottom: 50px;
+	text-align: center;
+	position: static;
+}
+footer p{
+	font-size: 12pt;
+}
+.bookonbekend{
+	background-color: white;
+	border: 1px solid black;
+}
+.bookonbekend img{
+	border: 4px solid white;
+}
+audio{
+	width: 80%;
+	margin:0 auto;
+}
